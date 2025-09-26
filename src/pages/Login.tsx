@@ -5,9 +5,8 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-import Email from "../components/Email";
+import LoginC from "../components/LoginC";
 import MyButton from "../components/MyButton";
-import Passwort from "../components/Passwort";
 
 const Login: React.FC = () => {
   return (
@@ -21,8 +20,7 @@ const Login: React.FC = () => {
         <IonHeader collapse="condense">
           <IonToolbar></IonToolbar>
         </IonHeader>
-        <Passwort />
-        <Email />
+        <LoginC />
       </IonContent>
       <MyButton />
     </IonPage>
