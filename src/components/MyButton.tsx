@@ -1,5 +1,4 @@
 import { IonButton, IonFooter } from "@ionic/react";
-import "./MyButton.css";
 
 function MyButton() {
   return (
