@@ -5,27 +5,28 @@ import {
   IonTitle,
   IonToolbar,
 } from "@ionic/react";
-import ExploreContainer from "../components/ExploreContainer";
-import "./Home.css";
+import Email from "../components/Email";
+import MyButton from "../components/MyButton";
+import Passwort from "../components/Passwort";
 
-const Home: React.FC = () => {
+const Login: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Blank</IonTitle>
+          <IonTitle>Lifaka Bingo</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
         <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">Blank</IonTitle>
-          </IonToolbar>
+          <IonToolbar></IonToolbar>
         </IonHeader>
-        <ExploreContainer />
+        <Passwort />
+        <Email />
       </IonContent>
+      <MyButton />
     </IonPage>
   );
 };
 
-export default Home;
+export default Login;
