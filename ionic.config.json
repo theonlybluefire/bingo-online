@@ -1,0 +1,7 @@
+{
+  "name": "bingo-online",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
