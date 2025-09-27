@@ -7,6 +7,8 @@ import {
 } from "@ionic/react";
 import MyButton from "../components/MyButton";
 
+import "./Start.css";
+
 const Start: React.FC = () => {
   return (
     <IonPage>
