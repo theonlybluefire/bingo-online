@@ -5,7 +5,7 @@ import { UserService } from "../services/FirebaseService";
 
 describe("Login", () => {
   test("validate email", async () => {
-    const email = screen.getByTestId("email"); //is defined by data-testid="email" in element jsx
+    const email = await screen.findByTestId("email"); //is defined by data-testid="email" in element jsx
     expect(email).toBeInTheDocument();
 
     ionFireEvent.ionChange(email, "test email");
@@ -14,7 +14,7 @@ describe("Login", () => {
   });
 
   test("require all fields to be filled", async () => {
-    const button = screen.getByTestId("submit");
+    const button = await screen.findByTestId("submit");
     expect(button).toBeInTheDocument();
 
     ionFireEvent.click(button);
@@ -25,9 +25,9 @@ describe("Login", () => {
   });
 
   test("submit form", async () => {
-    const email = screen.getByTestId("email");
-    const password = screen.getByTestId("password");
-    const button = screen.getByTestId("submit");
+    const email = await screen.findByTestId("email");
+    const password = await screen.findByTestId("password");
+    const button = await screen.findByTestId("submit");
     const loginFunction = vi.spyOn(UserService, "login");
 
     //fake function implementation
